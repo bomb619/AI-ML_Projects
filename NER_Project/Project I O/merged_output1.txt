@@ -1,0 +1,3 @@
+Melbourne NP B-LOC
+Melbourne NP B-LOC['B-LOC', 'B-LOC', [...]]
+%s

@@ -1,0 +1,3 @@
+Input:['El', 'técnico', 'australiano', 'no', 'podrá', 'contar', 'con', 'la', 'estrella', 'del', 'Leeds', 'United', 'de', 'Inglaterra', ',', 'Harry', 'Kewell', ';', 'con', 'el', 'goleador', 'y', 'mejor', 'jugador', 'de', 'la', 'liga', 'escocesa', ',', 'Mark', 'Viduka', '(', 'Celtic', ')', ',', 'y', 'los', 'defensas', 'del', 'Glasgow', 'Rangers', ',', 'Craig', 'Moore', 'y', 'Tony', 'Vidmar', '.']
+
+Output: lebels-- [O] [O] [O] [O] [O] [O] [B-LOC] [O] [O] [B-LOC] [O] [O] [O] [O] [O] [O] [O] [O] [O] [O] [O] [O] [O] [B-LOC] [O] [B-MISC] [I-MISC] [O] 

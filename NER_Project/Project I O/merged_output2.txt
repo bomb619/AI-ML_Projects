@@ -1,0 +1,7 @@
+Input:
+Melbourne NP B-LOC
+Melbourne NP B-LOC
+
+Output:
+['B-LOC', 'B-LOC']
+%s
