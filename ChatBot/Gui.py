@@ -176,7 +176,7 @@ button.place(relx=0.7, relheight=1, relwidth=0.3)
 label = Label(lower_frame, anchor='n', fg='white', font='Ariel')
 
 label['text']=text='\n\
-\n Hi %s, \n\nI am S.I.R.I.U.S. and I am here to help! \n\n \
+\n Hi %s, \n\nI am your ChatBot and I am here to help! \n\n \
 Type your query in English language. Type quit to exit.\n\n' % (userName)
 
 label.place(relwidth=1, relheight=1)
