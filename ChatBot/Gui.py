@@ -27,7 +27,7 @@ def get_input(sentence,n):
         instance.staticVariable = sentence 
     if(sentence=="quit"):
         sys.exit()
-    s='\nSorry! Found nothing for "%s". Please try with different keywords, like WR, DB, What is Mpie, CRM, OMS etc.\n\n In the meantime, \n I have logged your query in this path: C:\\Users\\%s\\Downloads\\user_records.db\n Log name: ~ user_records.db ~ which is located in your "Downloads" folder.\n\n Please close the application and share this log file with Sangeet at some point, so that I can learn more from\n you.      Email id: sangeet.bhowmick@amdocs.com\n\n\n Thanks,\n S.I.R.I.U.S.' % (sentence,userName)
+    s='\nSorry! Found nothing for "%s". Please try with different keywords, like WR, DB, What is Mpie, CRM, OMS etc.\n\n In the meantime, \n I have logged your query in this path: C:\\Users\\%s\\Downloads\\user_records.db\n Log name: ~ user_records.db ~ which is located in your "Downloads" folder.\n\n Please close the application and share this log file with Sangeet at some point, so that I can learn more from\n you.      Email id: sangeet.bhowmick@gmail.com\n\n\n Thanks,\n Your ChatBot' % (sentence,userName)
     data_string = StringVar()
     #c=chat.respond(sentence)
     #data_string.set(str(c))
@@ -36,7 +36,7 @@ def get_input(sentence,n):
         instance.staticanswer = c
         c='%s\n\n Was this helpful?\n\n\t\tplease reply with ~ yes or no ~\n\n\n\n\n Thanks,\n S.I.R.I.U.S.' % (c)
     if(sentence in chk):# chk=["yes", "no"]
-        c='\n Thanks for your feedback!\n\n\n In the meantime, \n I have logged your query in this path: C:\\Users\\%s\\Downloads\\user_records.db\n Log name: ~ user_records.db ~ which is located in your "Downloads" folder.\n\n Please close the application and share this log file with Sangeet at some point, so that I can learn more from\n you.      Email id: sangeet.bhowmick@amdocs.com\n\n\n Thanks,\n S.I.R.I.U.S.' % (userName)
+        c='\n Thanks for your feedback!\n\n\n In the meantime, \n I have logged your query in this path: C:\\Users\\%s\\Downloads\\user_records.db\n Log name: ~ user_records.db ~ which is located in your "Downloads" folder.\n\n Please close the application and share this log file with Sangeet at some point, so that I can learn more from\n you.      Email id: sangeet.bhowmick@amdocs.com\n\n\n Thanks,\n Your ChatBot' % (userName)
         db.execute('insert into user_query (question, answer, helpful, extra1) values  ("%s", "%s", "%s", "%s")' % (instance.staticVariable, instance.staticanswer, sentence,userName))
         db.commit()
     if(c==None):
@@ -63,7 +63,7 @@ def show(event=None):
         instance.staticVariable = sentence 
     if(sentence=="quit"):
         sys.exit()
-    s='\nSorry! Found nothing for "%s". Please try with different keywords, like WR, DB, What is Mpie, CRM, OMS etc.\n\n In the meantime, \n I have logged your query in this path: C:\\Users\\%s\\Downloads\\user_records.db\n Log name: ~ user_records.db ~ which is located in your "Downloads" folder.\n\n Please close the application and share this log file with Sangeet at some point, so that I can learn more from\n you.      Email id: sangeet.bhowmick@amdocs.com\n\n\n Thanks,\n S.I.R.I.U.S.\n\n\n\n' % (sentence,userName)
+    s='\nSorry! Found nothing for "%s". Please try with different keywords, like WR, DB, What is Mpie, CRM, OMS etc.\n\n In the meantime, \n I have logged your query in this path: C:\\Users\\%s\\Downloads\\user_records.db\n Log name: ~ user_records.db ~ which is located in your "Downloads" folder.\n\n Please close the application and share this log file with Sangeet at some point, so that I can learn more from\n you.      Email id: sangeet.bhowmick@gmail.com\n\n\n Thanks,\n Your ChatBot\n\n\n\n' % (sentence,userName)
     data_string = StringVar()
     #c=chat.respond(sentence)
     #data_string.set(str(c))
@@ -72,7 +72,7 @@ def show(event=None):
         instance.staticanswer = c
         c='[S.R.I.U.S.]: Your asked, "%s"\n%s\n\n\n Was this helpful?\n\n\t\tplease reply with ~ yes or no ~\n\n\n\n Thanks,\n S.I.R.I.U.S.\n\n\n\n' % (sentence,c)
     if(sentence in chk):# chk=["yes", "no"]
-        c='\n Thanks for your feedback!\n\n\n In the meantime, \n I have logged your query in this path: C:\\Users\\%s\\Downloads\\user_records.db\n Log name: ~ user_records.db ~ which is located in your "Downloads" folder.\n\n Please close the application and share this log file with Sangeet at some point, so that I can learn more from\n you.      Email id: sangeet.bhowmick@amdocs.com\n\n\n Thanks,\n S.I.R.I.U.S.' % (userName)
+        c='\n Thanks for your feedback!\n\n\n In the meantime, \n I have logged your query in this path: C:\\Users\\%s\\Downloads\\user_records.db\n Log name: ~ user_records.db ~ which is located in your "Downloads" folder.\n\n Please close the application and share this log file with Sangeet at some point, so that I can learn more from\n you.      Email id: sangeet.bhowmick@amdocs.com\n\n\n Thanks,\n Your ChatBot' % (userName)
         db.execute('insert into user_query (question, answer, helpful, extra1) values  ("%s", "%s", "%s", "%s")' % (instance.staticVariable, instance.staticanswer, sentence,userName))
         db.commit()
     if(c == None):
